@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" 
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="cac22558PersistenceUnit" transaction-type="RESOURCE_LOCAL">
+	<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+	<class>ar.com.froggie.cac22558.ti.model.Persona</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/registrocrud"/>
+			<property name="javax.persistence.jdbc.user" value="froggie"/>
+			<property name="javax.persistence.jdbc.password" value="Developer.001"/>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+			<property name="javax.persistence.schema-generation.database.action" value="create"/>
+			<property name="eclipselink.exclude-eclipselink-orm" value="true"/>
+			<property name="eclipselink.jdbc.cache-statements" value="false"/>
+			<property name="eclipselink.jdbc.native-sql" value="false"/>
+			<property name="eclipselink.jdbc.bind-parameters" value="true"/>
+			<property name="eclipselink.jdbc.read-connections.shared" value="true"/>
+			<property name="eclipselink.jdbc.exclusive-connection.is-lazy" value="true"/>
+			<property name="eclipselink.weaving.lazy" value="true"/>
+			<property name="eclipselink.weaving.fetchgroups" value="true"/>
+			<property name="eclipselink.weaving.internal" value="true"/>
+			<property name="eclipselink.weaving.eager" value="false"/>
+			<property name="eclipselink.session.include.descriptor.queries" value="true"/>
+			<property name="eclipselink.temporal.mutable" value="false"/>
+			<property name="eclipselink.logging.timestamp" value="true"/>
+			<property name="eclipselink.logging.thread" value="true"/>
+			<property name="eclipselink.logging.session" value="true"/>
+			<property name="eclipselink.logging.exceptions" value="false"/>
+			<property name="eclipselink.logging.connection" value="true"/>
+			<property name="eclipselink.logging.file" value="/Users/froggie/Projects/Eclipse-2020-06/workspace/Java/Codo-a-codo/CodoAcodo22558TrabajoIntegrador/PersistenceUnit.log"/>
+			<property name="eclipselink.ddl-generation.output-mode" value="both"/>
+			<property name="eclipselink.application-location" value="/Users/froggie/Projects/Eclipse-2020-06/workspace/Java/Codo-a-codo/EjemploJpaEclipseLink"/>
+		</properties>
+	</persistence-unit>
+</persistence>

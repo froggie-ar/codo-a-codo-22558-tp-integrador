@@ -1,0 +1,175 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap');
+
+body {
+    /* 
+    para margenes usamos em units porque son responsivas 
+    */
+    margin: 0.5em;
+    font-family:'Poppins';
+    background-color: #009192;
+    color: white;
+}
+
+.logo {
+	color: white;
+	font-weight: bold;
+	font-size: 1.5rem;
+
+}
+
+.logo-ini {
+	color: yellow;
+}
+
+.logo-med {
+	color: white;
+}
+
+.logo-fin {
+	color: lightblue;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+nav .header-ejercicio {
+	font-size: 1.0rem;
+}
+    
+.hero-image {
+  /* 
+  ponemos la imagen en forma absoluta porque queremos ubicarla en un lugar de la pagina con top y left
+  */
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../images/codo_a_codo4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%; 
+  z-index: -1; /* ponemos -1 para que quede al fondo de todo! */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+.subhead {
+	font-size: 1.6rem;
+	margin-bottom: 0;
+}
+
+.temario {
+	display: flex;
+	justify-content: center;
+	font-size: 1rem;
+}
+
+.ul-temario {
+	list-style-type: none;
+	font-size: 1rem;
+}
+
+.footer-ejercicio {
+	font-size: 1.1rem;
+}
+
+a {
+	color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 950px) {
+
+	body {
+		background-color: white;
+		margin-topo: 0;
+		margin-bottom: 0;
+	}
+	
+	.wrapper {
+		
+		margin-left: 1rem;
+		margin-right: 1rem;
+		
+	}
+	
+	nav {
+		width: 100%;
+		margin: 0;
+		background-color: #009192;
+		border-radius: 10px;
+		
+	}
+	
+	.logo {
+		margin-left: 0.5rem;
+	}
+	
+	nav .header-ejercicio {
+	
+		margin-right: 0.5rem;
+		margin-top: 0.4rem;
+	
+	}
+	
+	.hero-image {
+		left: unset;
+		top: 10%;
+		right: 3%;
+		width: 50%;
+		height: 42em;
+		background-position-x: 60%;
+	}
+	
+	h1 {
+		font-size: 3rem;
+		line-height: 3.2rem;
+	}
+	
+	.contenido {
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+	
+	.ul-temario {
+		margin-top: 1.3rem;
+	}
+	
+	.hero-section {
+		
+		    color: black;
+	        height: auto;
+	         width: 40%;
+	         margin-bottom: 18em;
+		
+	}
+
+	.footer-ejercicio {
+		
+		color:black;
+		
+	}
+}
